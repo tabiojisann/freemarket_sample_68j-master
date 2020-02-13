@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+%html(lang="en")
+  %head
+    %meta(charset="UTF-8")/
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+    %title goods out
+  %body  
+    .Wrapper
+
+      .Logo
+        mercari
+
+      .Contents 
+
+        .Contents__title
+          商品の情報を入力
+
+        .Contents__image
+
+          .Contents__image__title
+            .Contents__image__title--text
+              出品画像
+            .Contents__image__title--must
+              必須
+          .Contents__image__capture
+            最大10枚までアップロードできます
+          .Contents__image__up
+            .Contents__image__up__text
+              .Contents__image__up__text--one
+                ドラッグアンドドロップ
+              .Contents__image__up__text--two
+                またはクリックしてファイルをアップロード
+              
+            
+           
+
+        .Contents__form
+          .Contents__form__name
+            .Contents__form__name--text
+              商品名
+            .Contents__form__name--must
+              必須
+          %input.Contents__form--input{ name: :email, placeholder: :"商品名(必須40文字まで)", type: :email, value: :"" }/
+
+          .Contents__form__description 
+            .Contents__form__description--text
+              商品の説明
+            .Contents__form__description--must 
+              必須
+          .Contents__form--input-big
+            商品の説明(必須1,000文字以内) (色、素材、重さ、定価、注意点など) 例)
+            2010年頃に1万円で購入したジャケットです。ライトグレーではありません。
+            合わせやすいのでおすすめです。
+        
+        .Contents__detail
+          .Contents__detail__title
+            .Contents__detail__title--text
+              商品の詳細
+          .Contents__detail__list
+            .Contents__detail__list__category
+              .Contents__detail__list__category--text
+                カテゴリー
+              .Contents__detail__list__category--must
+                必須
+            %input.Contents__detail__list--input{ name: :email, placeholder: :-, type: :email, value: :"" }/
+
+            .Contents__detail__list__brand
+              .Contents__detail__list__brand--text
+                ブランド
+              .Contents__detail__list__brand--any
+                任意
+            %input.Contents__detail__list--input{ name: :email, placeholder: :"例) シャネル", type: :email, value: :"" }/  
+
+            .Contents__detail__list__status
+              .Contents__detail__list__status--text
+                商品の状態  
+              .Contents__detail__list__status--must
+                必須
+            %input.Contents__detail__list--input{ name: :email, placeholder: :-, type: :email, value: :"" }/
+        
+        .Contents__delivery
+          .Contents__delivery__title
+            .Contents__delivery__title--text
+              配送について
+            = link_to "#" do
+              = icon('fa', 'question-circle', class: 'Contents__delivery__title--icon')
+              -# = icon('fa', 'caret-right', class: 'Contents__delivery__title--icon')
+        
+
+          .Contents__delivery__category 
+
+            .Contents__delivery__category__burden 
+              .Contents__delivery__category__burden--text 
+                配送料の負担
+              .Contents__delivery__category__burden--must
+                必須 
+            %input.Contents__detail__list--input{ name: :email, placeholder: :-, type: :email, value: :"" }/
+
+            .Contents__delivery__category__area
+              .Contents__delivery__category__area--text
+                配送元の地域
+              .Contents__delivery__category__area--must
+                必須
+            %input.Contents__detail__list--input{ name: :email, placeholder: :-, type: :email, value: :"" }/  
+
+            .Contents__delivery__category__date
+              .Contents__delivery__category__date--text
+                配送までの日数
+              .Contents__delivery__category__date--must
+                必須
+            %input.Contents__detail__list--input{ name: :email, placeholder: :-, type: :email, value: :"" }/  
+
+        
+        .Contents__price
+          .Contents__price__title
+            .Contents__price__title--text
+              販売価格(300〜9,999,999)
+            = link_to "#" do
+              = icon('fa', 'question-circle', class: 'Contents__price__title--icon')  
+
+
+          .Contents__price__right
+            .Contents__price__right__category
+
+              .Contents__price__right__category__list
+                .Contents__price___right__category__list--text
+                  価格
+                .Contents__price__right__category__list--must
+                  必須
+              .Contents__price__right__category__form
+                .Contents__price__right__category__form--text
+                  ¥
+                %input.Contents__price__right__category__form--field{ name: :email, placeholder: :'例) 300', type: :email, value: :"" }/
+              
+            .Contents__price__right__commission
+              .Contents__price__right__commission--text
+                販売手数料 (10%)
+              .Contents__price__right__commission--rod   
+                ➖
+              
+
+            .Contents__price__right__profit
+              .Contents__price__right__profit--text
+                販売利益
+              .Contents__price__right__profit--rod
+                ➖
+
+        .Contents__Exhibition
+          .Contents__Exhibition__text
+            %p
+              = link_to "禁止されている出品", "#", class: "Contents__Exhibition__text--link"
+              ,
+              = link_to "行為", "#", class: "Contents__Exhibition__text--link"
+              を必ずご確認ください。
+            %pまたブランド品でシリアルナンバー等がある場合はご記載ください。
+            %p
+              = link_to "偽ブランドの販売", "#", class: "Contents__Exhibition__text--link"
+              は犯罪であり処罰される可能性があります。
+            %p
+              また、出品をもちまして
+              = link_to "加盟店規約", "#", class: "Contents__Exhibition__text--link"
+              に同意したことになります。
+          
+          .Contents__Exhibition__btn
+            = link_to "出品する", "#", class: "Contents__Exhibition__btn--btn"
+
+          
+            = link_to "もどる", "#", class: "Contents__Exhibition__btn--return"    
+           
+      
+
+
+               
+              
+
+              
+
+
+
+
+
+
+
+
+              
+            
+
+
+      .Footer
+          
+  
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
