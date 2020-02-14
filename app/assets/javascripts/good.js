@@ -1,6 +1,7 @@
 $(function () {
-  $('select').change(function() {
-    var val = $(this).val();
-    $('p').text(val);
+  $('select').click(function() {
+    $('#btn').each(function() {
+      
+    })
   })
 })
