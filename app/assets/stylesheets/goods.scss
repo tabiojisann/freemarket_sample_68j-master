@@ -2,8 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
 .Wrapper {
-  height: 350vh;
+  height: 550vh;
   width: 100%;
   background-color: rgb(246, 246, 250);
   position: relative;
@@ -22,7 +24,7 @@
 //_______________________________________________________
 
 .Contents {
-  height: 2000px;
+  height: 2100px;
   width: 50%;
   background-color: white;
   margin: 0 auto;
@@ -53,7 +55,7 @@
       }
       &--must {
           color: white;
-          background-color: red;
+          background-color: #3CCACE;
           font-size: 5px;
           font-weight: bold;
           border-radius: 2px;
@@ -76,12 +78,15 @@
 
       &__text {
         text-align: center;
-        margin-top: 70px;
+        margin-top: 55px;
         &--one {
-          text-align: center;
+          // text-align: center;
         }
         &--two {
-          // text-align: center;
+          text-align: center;
+        }
+        &--three {
+
         }
       }
     }
@@ -103,7 +108,7 @@
       }
       &--must {
         color: white;
-        background-color: red;
+        background-color: #3CCACE;
         font-size: 5px;
         font-weight: bold;
         border-radius: 2px;
@@ -135,7 +140,7 @@
       }
       &--must {
         color: white;
-        background-color: red;
+        background-color: #3CCACE;
         font-size: 5px;
         font-weight: bold;
         border-radius: 2px;
@@ -193,7 +198,7 @@
         }
         &--must {
           color: white;
-          background-color: red;
+          background-color: #3CCACE;
           font-size: 5px;
           font-weight: bold;
           border-radius: 2px;
@@ -218,8 +223,18 @@
           padding: 3px;
           margin-left: 10px;
         }
+        &--input {
+          height: 50px;
+          width: 85%; 
+          line-height: 50px;
+          padding-left: 30px;
+          margin-top: 15px;
+          border: 1px solid lightgrey;
+          border-radius: 3px;
+          font-size: 15px;
+        }
       }
-
+ 
 
       &__status {
         display: flex;
@@ -232,7 +247,7 @@
         }
         &--must {
           color: white;
-          background-color: red;
+          background-color: #3CCACE;
           font-size: 5px;
           font-weight: bold;
           border-radius: 2px;
@@ -289,7 +304,7 @@
         }
         &--must {
           color: white;
-          background-color: red;
+          background-color: #3CCACE;
           font-size: 5px;
           font-weight: bold;
           border-radius: 2px;
@@ -308,7 +323,7 @@
         }
         &--must {
           color: white;
-          background-color: red;
+          background-color: #3CCACE;
           font-size: 5px;
           font-weight: bold;
           border-radius: 2px;
@@ -326,7 +341,7 @@
         }
         &--must {
           color: white;
-          background-color: red;
+          background-color: #3CCACE;
           font-size: 5px;
           font-weight: bold;
           border-radius: 2px;
@@ -386,12 +401,15 @@
 
           &--must {
             color: white;
-            background-color: red;
+            background-color: #3CCACE;
             font-size: 5px;
             font-weight: bold;
             border-radius: 2px;
             padding: 3px;
             margin-left: 10px;
+          }
+          &--select {
+            height: 100px;
           }
         }
         &__form {
@@ -407,7 +425,7 @@
           }
           &--field {
             height: 40px;
-            border-radius: 2px;
+            // border-radius: 2px;
             text-align: right;
             padding-right: 20px;
           }
@@ -530,5 +548,12 @@
   height: 300px;
   width: 400px;
   margin: 0 auto;
+}
+
+select {
+  height: 50px;
+  width: 460px;
+  margin-top: 10px;
+
 }
 
